@@ -3,6 +3,8 @@ import "flatpickr/dist/flatpickr.min.css";
 import Notiflix from "notiflix";
 
 const startButton = document.querySelector('[data-start]');
+startButton.disabled = true; // Disable the Start button by default
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -25,8 +27,8 @@ flatpickr("#datetime-picker", options);
 
 startButton.addEventListener('click', function () {
   const selectedDate = new Date(document.getElementById('datetime-picker').value);
-
-  Notiflix.Notify.info("Countdown timer started!");
+  startButton.disabled = true; // Disable the Start button after clicking
+  Notiflix.Notify.success("Countdown timer started!");
 
   // Start countdown timer logic
   const countdownInterval = setInterval(function () {
