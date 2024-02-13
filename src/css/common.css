@@ -10,7 +10,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
 }
 
 img {
@@ -41,7 +41,6 @@ img {
 .start-button {
   background-color: #4CAF50;
   color: white;
-
 }
 
 .stop-button {
@@ -57,4 +56,70 @@ img {
 .button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  margin-bottom: 20px;
+  /* Add some margin below the container */
+}
+
+input[type="text"],
+button {
+  margin: 0 10px;
+  /* Add some spacing between input and button */
+}
+
+.timer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Wrap items if necessary */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  margin-bottom: 20px;
+  /* Add some margin below the container */
+}
+
+input[type="text"],
+button {
+  margin: 0 10px;
+  /* Add some spacing between input and button */
+}
+
+.field {
+  text-align: center;
+  margin: 10px;
+  /* Add some margin between fields */
+}
+
+.value-container {
+  text-align: center;
+}
+
+.value {
+  font-size: 3em;
+  /* Adjust the font size as needed */
+  display: block;
+}
+
+.label {
+  font-size: 1.5em;
+  /* Adjust the font size as needed */
+  display: block;
 }
