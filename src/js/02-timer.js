@@ -30,7 +30,7 @@ startButton.addEventListener('click', function () {
   startButton.disabled = true; // Disable the Start button after clicking
   Notiflix.Notify.success("Countdown timer started!");
 
-  // Start countdown timer logic
+
   const countdownInterval = setInterval(function () {
     const currentDate = new Date();
     const difference = selectedDate - currentDate;
